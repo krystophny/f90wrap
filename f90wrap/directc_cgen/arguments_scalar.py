@@ -124,10 +124,11 @@ def _prepare_character_none_case(
     """Handle None value for character arguments."""
     gen.write(f"if (py_{arg.name} == Py_None) {{")
     gen.indent()
-    if optional and not is_output_argument(arg):
-        # Absent optional input: pass a NULL pointer so present(arg) == .false.
+    if optional:
+        # Absent optional argument: pass a NULL pointer so present(arg) == .false.
+        # The output path returns None for a NULL character buffer.
         gen.write(f"{arg.name} = NULL;")
-    elif optional or intent != "in":
+    elif intent != "in":
         gen.write(f"{arg.name}_len = {default_len};")
         gen.write(f"if ({arg.name}_len <= 0) {{")
         gen.indent()
