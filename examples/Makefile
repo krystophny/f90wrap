@@ -46,6 +46,7 @@ EXAMPLES = \
 	issue371_optional_complex \
 	issue373_optional_constructor \
 	issue374_polymorphic_global \
+	issue378_flang_handle_size \
 	issue41_abstract_classes \
 	keep_single_interface \
 	keyword_renaming_issue160 \
