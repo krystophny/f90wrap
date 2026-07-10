@@ -45,6 +45,7 @@ EXAMPLES = \
 	issue369_optional_present \
 	issue371_optional_complex \
 	issue373_optional_constructor \
+	issue374_polymorphic_global \
 	issue41_abstract_classes \
 	keep_single_interface \
 	keyword_renaming_issue160 \

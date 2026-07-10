@@ -41,6 +41,7 @@ list(APPEND tests
     issue307_logical_array
     issue32
     issue373_optional_constructor
+    issue374_polymorphic_global
     issue41_abstract_classes
     keep_single_interface
     keyword_renaming_issue160
