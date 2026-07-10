@@ -44,6 +44,7 @@ EXAMPLES = \
 	issue357_name_conflict \
 	issue369_optional_present \
 	issue371_optional_complex \
+	issue373_optional_constructor \
 	issue41_abstract_classes \
 	keep_single_interface \
 	keyword_renaming_issue160 \
